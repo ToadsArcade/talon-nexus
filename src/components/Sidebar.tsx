@@ -32,51 +32,51 @@ export function Sidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton asChild>
+                <SidebarMenuButton asChild className="h-12">
                   <NavLink to="/" end className={getNavCls}>
-                    <Home className="h-5 w-5" />
-                    {!isCollapsed && <span>Home</span>}
+                    <Home className="h-6 w-6" />
+                    {!isCollapsed && <span className="text-base">Home</span>}
                   </NavLink>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild>
+                <SidebarMenuButton asChild className="h-12">
                   <NavLink to="/games" className={getNavCls}>
-                    <Gamepad2 className="h-5 w-5" />
-                    {!isCollapsed && <span>Games</span>}
+                    <Gamepad2 className="h-6 w-6" />
+                    {!isCollapsed && <span className="text-base">Games</span>}
                   </NavLink>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
               <SidebarMenuItem>
-                <SidebarMenuButton asChild>
+                <SidebarMenuButton asChild className="h-12">
                   <NavLink to="/proxies" className={getNavCls}>
-                    <Globe className="h-5 w-5" />
-                    {!isCollapsed && <span>Proxies</span>}
+                    <Globe className="h-6 w-6" />
+                    {!isCollapsed && <span className="text-base">Proxies</span>}
                   </NavLink>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
               <SidebarMenuItem className="mt-6">
-                <div className={`grid ${isCollapsed ? "grid-cols-1 gap-2" : "grid-cols-2 gap-2"} px-2`}>
+                <div className={`grid ${isCollapsed ? "grid-cols-1 gap-3" : "grid-cols-2 gap-3"} px-2`}>
                   <a
                     href="https://discord.gg/your-server"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-lg py-2 px-3 transition-all duration-300"
+                    className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-xl py-3 px-3 transition-all duration-300 border-2 border-[#7289DA] hover:border-white shadow-lg"
                   >
-                    <FaDiscord className="h-4 w-4" />
-                    {!isCollapsed && <span className="text-sm font-medium">Discord</span>}
+                    <FaDiscord className="h-5 w-5" />
+                    {!isCollapsed && <span className="text-sm font-semibold">Discord</span>}
                   </a>
                   <a
                     href="https://youtube.com/@your-channel"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#FF0000] hover:bg-[#CC0000] text-white rounded-lg py-2 px-3 transition-all duration-300"
+                    className="flex items-center justify-center gap-2 bg-[#FF0000] hover:bg-[#CC0000] text-white rounded-xl py-3 px-3 transition-all duration-300 border-2 border-[#FF4444] hover:border-white shadow-lg"
                   >
-                    <Youtube className="h-4 w-4" />
-                    {!isCollapsed && <span className="text-sm font-medium">YouTube</span>}
+                    <Youtube className="h-5 w-5" />
+                    {!isCollapsed && <span className="text-sm font-semibold">YouTube</span>}
                   </a>
                 </div>
               </SidebarMenuItem>
