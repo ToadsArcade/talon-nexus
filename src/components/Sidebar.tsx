@@ -1,4 +1,4 @@
-import { Gamepad2, Globe, Youtube, Home } from "lucide-react";
+import { Gamepad2, Globe, Youtube, Home, Newspaper } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import {
   Sidebar as SidebarContainer,
@@ -54,6 +54,15 @@ export function Sidebar() {
                   <NavLink to="/proxies" className={getNavCls}>
                     <Globe className="h-6 w-6" />
                     {!isCollapsed && <span className="text-base">Proxies</span>}
+                  </NavLink>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild className="h-12">
+                  <NavLink to="/news" className={getNavCls}>
+                    <Newspaper className="h-6 w-6" />
+                    {!isCollapsed && <span className="text-base">News/Updates</span>}
                   </NavLink>
                 </SidebarMenuButton>
               </SidebarMenuItem>

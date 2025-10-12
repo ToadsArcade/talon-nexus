@@ -7,6 +7,7 @@ import { Layout } from "./components/Layout";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Proxies from "./pages/Proxies";
+import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
             <Route path="/proxies" element={<Proxies />} />
+            <Route path="/news" element={<News />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
