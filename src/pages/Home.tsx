@@ -1,13 +1,6 @@
 import { Button } from "@/components/ui/button";
 
 const Home = () => {
-  const ddxLinks = [
-    { name: "DDX 1", url: "#" },
-    { name: "DDX 2", url: "#" },
-    { name: "DDX 3", url: "#" },
-    { name: "DDX 4", url: "#" },
-  ];
-
   return (
     <div className="flex min-h-screen items-center justify-center p-8 relative overflow-hidden bg-gradient-to-br from-[#1a0a2e] via-[#16213e] to-[#0f3460]">
       {/* Starry particle effect */}
@@ -50,24 +43,6 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {ddxLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.url}
-              className="group"
-            >
-              <Button
-                variant="secondary"
-                size="lg"
-                className="w-full h-32 text-xl font-semibold bg-secondary hover:bg-accent transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
-              >
-                {link.name}
-              </Button>
-            </a>
-          ))}
-        </div>
-
         <div className="mt-8">
           <a
             href="https://luminal.cfd.cdn.cloudflare.net/"
@@ -78,7 +53,7 @@ const Home = () => {
             <Button
               variant="secondary"
               size="lg"
-              className="w-full md:w-auto px-12 h-32 text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400 text-white border-2 border-orange-400 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+              className="w-64 h-20 text-xl font-semibold bg-secondary hover:bg-accent transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-accent"
             >
               🌐 LuminalOS
             </Button>
