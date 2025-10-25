@@ -51,15 +51,6 @@ export function Sidebar() {
 
               <SidebarMenuItem>
                 <SidebarMenuButton asChild className="h-12">
-                  <NavLink to="/proxies" className={getNavCls}>
-                    <Globe className="h-6 w-6" />
-                    {!isCollapsed && <span className="text-base">Proxies</span>}
-                  </NavLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild className="h-12">
                   <NavLink to="/news" className={getNavCls}>
                     <Newspaper className="h-6 w-6" />
                     {!isCollapsed && <span className="text-base">News/Updates</span>}

@@ -80,9 +80,14 @@ All colors MUST be HSL.
     50% { transform: translate(-150px, -150px) rotate(180deg); }
   }
 
-  @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+  @keyframes particle-float {
+    0%, 100% { transform: translateY(0px); opacity: 0.3; }
+    50% { transform: translateY(-100px); opacity: 1; }
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
   }
 }
 
