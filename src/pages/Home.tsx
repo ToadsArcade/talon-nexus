@@ -9,11 +9,16 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background to-card p-8">
-      <div className="text-center space-y-12 max-w-4xl w-full">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background to-card p-8 relative overflow-hidden">
+      <div className="absolute top-8 left-8 text-6xl animate-pulse">🎃</div>
+      <div className="absolute top-16 right-12 text-5xl animate-pulse delay-100">🎃</div>
+      <div className="absolute bottom-12 left-16 text-7xl animate-pulse delay-200">🎃</div>
+      <div className="absolute bottom-8 right-8 text-6xl animate-pulse delay-300">🎃</div>
+      
+      <div className="text-center space-y-12 max-w-4xl w-full relative z-10">
         <div className="space-y-4">
           <h1 className="text-6xl font-bold text-foreground tracking-tight">
-            Talon // Unblocked Games
+            🎃 Talon // Unblocked Games 🎃
           </h1>
           <p className="text-xl text-muted-foreground font-medium">
             Built by Aiden
