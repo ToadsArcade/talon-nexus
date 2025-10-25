@@ -9,11 +9,21 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background to-card p-8 relative overflow-hidden">
-      <div className="absolute top-8 left-8 text-6xl animate-pulse">🎃</div>
-      <div className="absolute top-16 right-12 text-5xl animate-pulse delay-100">🎃</div>
-      <div className="absolute bottom-12 left-16 text-7xl animate-pulse delay-200">🎃</div>
-      <div className="absolute bottom-8 right-8 text-6xl animate-pulse delay-300">🎃</div>
+    <div className="flex min-h-screen items-center justify-center p-8 relative overflow-hidden"
+         style={{
+           background: 'linear-gradient(135deg, hsl(25 35% 8%), hsl(35 40% 12%), hsl(25 35% 8%), hsl(20 38% 10%))',
+           backgroundSize: '400% 400%',
+           animation: 'gradient-shift 15s ease infinite'
+         }}>
+      {/* Floating pumpkins */}
+      <div className="absolute top-8 left-8 text-6xl" style={{ animation: 'float 3s ease-in-out infinite' }}>🎃</div>
+      <div className="absolute top-16 right-12 text-5xl" style={{ animation: 'float-slow 4s ease-in-out infinite 0.5s' }}>🎃</div>
+      <div className="absolute bottom-12 left-16 text-7xl" style={{ animation: 'float 3.5s ease-in-out infinite 1s' }}>🎃</div>
+      <div className="absolute bottom-8 right-8 text-6xl" style={{ animation: 'float-slow 4.5s ease-in-out infinite 1.5s' }}>🎃</div>
+      <div className="absolute top-1/2 left-4 text-5xl" style={{ animation: 'float 3.2s ease-in-out infinite 2s' }}>👻</div>
+      <div className="absolute top-1/3 right-8 text-5xl" style={{ animation: 'float-slow 3.8s ease-in-out infinite 2.5s' }}>👻</div>
+      <div className="absolute bottom-1/3 left-1/4 text-4xl" style={{ animation: 'float 3.6s ease-in-out infinite 3s' }}>🦇</div>
+      <div className="absolute top-1/4 right-1/4 text-4xl" style={{ animation: 'float-slow 4.2s ease-in-out infinite 0.8s' }}>🦇</div>
       
       <div className="text-center space-y-12 max-w-4xl w-full relative z-10">
         <div className="space-y-4">
