@@ -64,7 +64,7 @@ export function Sidebar() {
                     href="https://discord.gg/mh6DDJmrSn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-xl py-3 px-3 transition-all duration-300 border-2 border-[#7289DA] hover:border-white shadow-lg"
+                    className="flex items-center justify-center gap-2 bg-primary hover:bg-accent text-primary-foreground rounded-xl py-3 px-3 transition-all duration-300 border-2 border-accent hover:border-ring shadow-lg"
                   >
                     <FaDiscord className="h-5 w-5" />
                     {!isCollapsed && <span className="text-sm font-semibold">Discord</span>}
@@ -73,7 +73,7 @@ export function Sidebar() {
                     href="https://www.youtube.com/@TalonGames13"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#FF0000] hover:bg-[#CC0000] text-white rounded-xl py-3 px-3 transition-all duration-300 border-2 border-[#FF4444] hover:border-white shadow-lg"
+                    className="flex items-center justify-center gap-2 bg-primary hover:bg-accent text-primary-foreground rounded-xl py-3 px-3 transition-all duration-300 border-2 border-accent hover:border-ring shadow-lg"
                   >
                     <Youtube className="h-5 w-5" />
                     {!isCollapsed && <span className="text-sm font-semibold">YouTube</span>}

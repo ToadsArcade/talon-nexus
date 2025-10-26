@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center p-8 relative overflow-hidden bg-gradient-to-br from-[#1a0a2e] via-[#16213e] to-[#0f3460]">
+    <div className="flex min-h-screen items-center justify-center p-8 relative overflow-hidden bg-background">
       {/* Starry particle effect */}
       {[...Array(50)].map((_, i) => (
         <div
           key={i}
-          className="absolute w-1 h-1 bg-orange-400 rounded-full"
+          className="absolute w-1 h-1 bg-accent rounded-full"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
