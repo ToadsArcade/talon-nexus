@@ -45,7 +45,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="https://luminal.cfd.cdn.cloudflare.net/"
             target="_blank"
@@ -60,6 +60,26 @@ const Home = () => {
               🌐 LuminalOS
             </Button>
           </a>
+          
+          <Button
+            variant="secondary"
+            size="lg"
+            className="w-64 h-20 text-xl font-semibold bg-secondary hover:bg-accent transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-accent"
+            onClick={() => {
+              fetch(`https://cdn.jsdelivr.net/gh/bubbls/ugs-singlefile@main/AASINGLEFILE.html?t=${Date.now()}`)
+                .then(response => response.text())
+                .then(text => {
+                  const newWin = window.open("about:blank", "_blank");
+                  if (newWin) {
+                    newWin.document.open();
+                    newWin.document.write(text);
+                    newWin.document.close();
+                  }
+                });
+            }}
+          >
+            📚 Math Homework
+          </Button>
         </div>
       </div>
     </div>
