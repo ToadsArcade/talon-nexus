@@ -8,47 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 39% 15%;
+    --background: 150 40% 12%;
     --foreground: 0 0% 98%;
 
-    --card: 248 35% 20%;
+    --card: 150 35% 16%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 248 38% 18%;
+    --popover: 150 38% 14%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 277 86% 36%;
+    --primary: 0 72% 45%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 248 30% 25%;
+    --secondary: 150 30% 20%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 248 25% 30%;
+    --muted: 150 25% 25%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 271 76% 53%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 248 28% 25%;
-    --input: 248 28% 25%;
-    --ring: 271 76% 53%;
+    --border: 150 28% 22%;
+    --input: 150 28% 22%;
+    --ring: 45 90% 55%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 0% / 0.3;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 0 0% 100%;
-    --sidebar-primary-foreground: 248 39% 15%;
-    --sidebar-accent: 277 86% 36%;
+    --sidebar-primary-foreground: 150 40% 12%;
+    --sidebar-accent: 0 72% 45%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 248 28% 25%;
-    --sidebar-ring: 271 76% 53%;
+    --sidebar-border: 150 28% 22%;
+    --sidebar-ring: 45 90% 55%;
 
-    --gradient-purple: linear-gradient(135deg, hsl(248 39% 39%) 0%, hsl(277 92% 36%) 100%);
-    --shadow-glow: 0 4px 20px rgba(138, 43, 226, 0.4);
+    --gradient-christmas: linear-gradient(135deg, hsl(150 40% 20%) 0%, hsl(0 72% 35%) 100%);
+    --shadow-glow: 0 4px 20px rgba(220, 38, 38, 0.4);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
